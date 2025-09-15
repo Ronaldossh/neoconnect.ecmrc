@@ -1,0 +1,51 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .company-name { 
+        font-family: 'Poppins', sans-serif; 
+        font-weight: 700; 
+        font-size: 18px; 
+        fill: #334155; 
+      }
+      .tagline { 
+        font-family: 'Poppins', sans-serif; 
+        font-weight: 400; 
+        font-size: 10px; 
+        fill: #3b82f6; 
+      }
+      .logo-icon { 
+        fill: #1e293b; 
+        stroke: #1e293b;
+        stroke-width: 2;
+      }
+      .connection-line {
+        stroke: #3b82f6;
+        stroke-width: 3;
+        fill: none;
+      }
+    </style>
+  </defs>
+  
+  <!-- Logo Icon - Network/Connection Symbol -->
+  <g transform="translate(5, 10)">
+    <!-- Main connection line -->
+    <path d="M5 20 Q15 10 25 20" class="connection-line"/>
+    
+    <!-- Connection nodes -->
+    <circle cx="5" cy="20" r="4" class="logo-icon"/>
+    <circle cx="25" cy="20" r="4" class="logo-icon"/>
+    
+    <!-- Additional connection point -->
+    <circle cx="15" cy="12" r="3" class="logo-icon"/>
+    
+    <!-- Connection lines to center node -->
+    <line x1="5" y1="20" x2="15" y2="12" class="connection-line" stroke-width="2"/>
+    <line x1="25" y1="20" x2="15" y2="12" class="connection-line" stroke-width="2"/>
+  </g>
+  
+  <!-- Company Name -->
+  <text x="45" y="25" class="company-name">neoconnect</text>
+  
+  <!-- Tagline -->
+  <text x="45" y="38" class="tagline">Conectando ideias à web</text>
+</svg>
