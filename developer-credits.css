@@ -1,0 +1,99 @@
+/* Developer Credits Styles */
+.developer-credits {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 0;
+    margin: 20px 0;
+    border-top: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    border-radius: 8px;
+}
+
+.neoconnect-logo {
+    display: flex;
+    align-items: center;
+}
+
+.neoconnect-logo svg {
+    transition: transform 0.3s ease;
+}
+
+.neoconnect-logo:hover svg {
+    transform: scale(1.05);
+}
+
+.credits-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #64748b;
+}
+
+.developed-by {
+    font-weight: 400;
+    color: #64748b;
+}
+
+.developer-link {
+    text-decoration: none;
+    color: #2c5aa0;
+    transition: all 0.3s ease;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: rgba(44, 90, 160, 0.1);
+}
+
+.developer-link:hover {
+    color: #1e40af;
+    background: rgba(44, 90, 160, 0.2);
+    transform: translateY(-1px);
+}
+
+.developer-link strong {
+    font-weight: 600;
+}
+
+.company-info {
+    font-weight: 500;
+    color: #4a90e2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .developer-credits {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .credits-text {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .neoconnect-logo svg {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .developer-credits {
+        padding: 15px 10px;
+        margin: 15px 0;
+    }
+    
+    .credits-text {
+        font-size: 12px;
+    }
+    
+    .neoconnect-logo svg {
+        width: 30px;
+        height: 30px;
+    }
+}
